@@ -1,17 +1,17 @@
 import Letter from "./Letter";
 
 const LetterGrid = ({secretWord, guessedLetters})=>{
-  let lettered = secretWord
+  let letters = secretWord
                 .split('')
-                .map(letter=>{
+                .map((letter, idx)=>{
                   let isShown = guessedLetters.indexOf(letter.toLowerCase()) > -1;
                   return(
-                    <Letter value={letter} isShown={isShown} />                  
+                    <Letter key={idx} value={letter} isShown={isShown} />                  
                   )
                 });
   return(
     <>
-      {lettered}
+      {letters}
     </>
   )
 }

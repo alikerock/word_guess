@@ -1,7 +1,7 @@
 //맵 기본 문법
 let arr =['a','b','c'];
 
-let list = arr.map(function(item){
+let list = arr.map(function(item,idx,all){
   let title = item+'항목';
   return `<li>${title}</li>`;
 });

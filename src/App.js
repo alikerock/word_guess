@@ -1,6 +1,7 @@
 import './App.css';
 import GameBoard from './GameBoard';
 
+
 function App() {  
   return (
     <div className="App">
@@ -8,6 +9,7 @@ function App() {
       <p>Do you want to play game?</p>
       <div>
         <GameBoard secretWord="React"/>
+
       </div>
     </div> 
   );  
