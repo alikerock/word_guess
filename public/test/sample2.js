@@ -1,4 +1,4 @@
-import {langs, hello1, hello2, hello3} from "sample1s";
-import lang from 'langs';
+import {lang, hello1, hello2, hello3} from "./sample1s";
+// import lang from 'langs';
 
-console.log(langs,hello1, hello2, hello3, lang);
+console.log(hello1, hello2, hello3, lang);
