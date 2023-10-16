@@ -10,9 +10,9 @@ const LetterGrid = ({secretWord, guessedLetters})=>{
                   )
                 });
   return(
-    <>
+    <div className="letters">
       {letters}
-    </>
+    </div>
   )
 }
 export default LetterGrid;
