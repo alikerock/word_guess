@@ -1,9 +1,11 @@
-const WordSelect = ()=>{
+import { useState } from "react";
+
+const WordSelect = ({wordSelected})=>{
   const [secretWord, setSecretWord] = useState('');
   
   const onSubmit = (e) =>{
       e.preventDefault();
-
+      wordSelected(secretWord);
   }
   return(
 
